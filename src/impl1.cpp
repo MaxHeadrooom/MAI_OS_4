@@ -5,6 +5,7 @@ extern "C"
 {
     double S(double stor1, double stor2)
     {
+        //std::cout << "2312312313\n";
         return stor1 * stor2;
     }
 }

@@ -3,11 +3,11 @@
 
 int main()
 {
-    std::cout << "This program is linking libraries during compilation. Instructions: " << '\n'
-              << "\"1\" - calculate square of figure" << '\n'
-              << "\"2\" - sorting array" << '\n'
-              << "\"-1\" - exit" << '\n'
-              << "Input instruction: ";
+    std::cout << "Программа подгружает библиотеки во время выполнения. Инструкции: " << '\n'
+              << "\"1\" - вычислить площадь фигуры" << '\n'
+              << "\"2\" - отсортировать массив" << '\n'
+              << "\"-1\" - выход" << '\n'
+              << "Введите инструкцию: ";
 
     int option;
     std::cin >> option;
@@ -17,12 +17,12 @@ int main()
         switch (option) 
         {
             case -1:
-                exit(0);
+                break;
             case 1:
                 float A, B;
                 std::cin >> A >> B;
-                std::cout << "The square is: " << S(A, B) << '\n'
-                          << "Input instruction: ";
+                std::cout << "Площадь фигуры: " << S(A, B) << '\n'
+                          << "Введите инструкцию: ";
                 std::cin >> option;
                 break;
 
@@ -43,7 +43,7 @@ int main()
                 {
                     std::cout << mas[i] << " ";
                 }
-                std::cout << '\n' << "Input instruction: ";
+                std::cout << '\n' << "Введите инструкцию: ";
                 std::cin >> option;
                 //delete [] mas;
                 //delete [] m;
